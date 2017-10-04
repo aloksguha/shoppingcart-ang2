@@ -1,0 +1,15 @@
+
+  <h1 md-dialog-title>{{data.product.name}}</h1>
+  <hr>
+  <div md-dialog-content>
+    <p>Price : {{data.product.price}}</p>
+    <p>Qty : <input mdInput type="number" name="quantity" min="0" max="50" [(ngModel)]="qty"></p>
+  </div>
+  <div md-dialog-content>
+    Total Amount : {{data.product.price * qty}}
+  </div>
+  <hr>
+  <div md-dialog-actions>
+    <button md-raised-button tabindex="2" (click)="onAdd()" color="primary"><md-icon class="example-icon">add_circle_outline</md-icon> Add</button>
+    <button md-raised-button (click)="onNoClick()" tabindex="-1" color="accent">No Thanks</button>
+  </div>

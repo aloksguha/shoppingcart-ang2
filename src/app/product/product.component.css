@@ -1,0 +1,21 @@
+.example-card {
+    width: 300px;
+    background: linear-gradient(to right, rgba(236, 236, 235, 0.56), #BBD7EB);
+    border-radius: 50;
+  }
+
+  .example-card:hover { 
+    /* background: linear-gradient(to right, rgba(78, 211, 85, 0.56), #40C5C5); */
+    border : solid #06046D 1px;
+    width: 301px;
+  
+}
+  
+  .example-header-image {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/16/Firefox_Developer_Edition_logo.png');
+    background-size: cover;
+  }
+
+ .md-card-image{
+   border: 1px solid
+ }

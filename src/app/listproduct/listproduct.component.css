@@ -1,0 +1,9 @@
+md-card{
+    width: 100%;
+    margin: 0.1cm 0.1cm 0.1cm 0.1cm;
+    height: 100px;
+}
+
+md-card:hover { 
+    background-color: rgb(131, 157, 243);
+}

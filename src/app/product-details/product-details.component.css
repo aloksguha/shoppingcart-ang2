@@ -1,0 +1,16 @@
+.example-card {
+    width: 400px;
+    background: linear-gradient(to right, rgba(236, 236, 235, 0.56), #BBD7EB);
+    border-radius: 50;
+  }
+
+  #wrapper
+  {
+    
+   margin:0 auto;
+   position:absolute;
+   left:50%;
+   /* top:50%; */
+   margin-left:-250px;
+   /* margin-top:-250px; */
+  }

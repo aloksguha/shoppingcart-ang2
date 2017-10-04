@@ -1,0 +1,21 @@
+<div id="wrapper">
+    <md-card class="example-card" >
+        <md-card-header>
+          <div md-card-avatar class="example-header-image"></div>
+          <md-card-title >{{product.name}}</md-card-title>
+          <md-card-subtitle>{{product.name}} @ INR {{product.price}}</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="http://pngimg.com/uploads/firefox/firefox_PNG44.png" alt="">
+        <md-card-content>
+          <p>
+            Mozilla Firefox (or simply Firefox) is a free and open-source[18] web browser developed by the Mozilla Foundation and its subsidiary the Mozilla Corporation. 
+          </p>
+        </md-card-content>
+        <hr>
+        <md-card-actions>
+          <button md-button (click)="quickaddToCart()"><md-icon class="example-icon">add_shopping_cart</md-icon></button>
+          <button md-button (click)="addToCart()"><md-icon class="example-icon">queue</md-icon> Add more</button>
+          <button md-button [routerLink]="['/']">Return</button>
+        </md-card-actions>
+      </md-card>  
+</div>

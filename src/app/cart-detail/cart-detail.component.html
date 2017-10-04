@@ -1,0 +1,11 @@
+<md-card>
+  <md-grid-list cols="4" rowHeight="19:1">
+    <md-grid-tile>{{cartproduct.product.name}} X {{cartproduct.quantity}} </md-grid-tile>
+    <md-grid-tile>{{cartproduct.product.price}} INR </md-grid-tile>
+    <md-grid-tile>{{cartproduct.product.price * cartproduct.quantity}} INR </md-grid-tile>
+    <md-grid-tile>
+      <md-icon class="example-icon" (click)="editCartProduct()">edit</md-icon> 
+      <md-icon class="example-icon" (click)="deleteProductFromCart()">delete</md-icon>
+    </md-grid-tile>
+  </md-grid-list>
+</md-card>

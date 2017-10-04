@@ -1,0 +1,20 @@
+<div *ngIf="cartTotal > 0; else elseBlock">
+    <app-cart-detail *ngFor="let cartproduct of cartProducts" [cartproduct]="cartproduct"></app-cart-detail>
+
+    <md-grid-list cols="4" rowHeight="5:1">
+        <md-grid-tile></md-grid-tile>
+        <md-grid-tile></md-grid-tile>
+      <md-grid-tile><b>{{cartTotal}} INR</b></md-grid-tile>
+      <md-grid-tile>
+        <button md-raised-button (click)="checkout()"><md-icon class="example-icon">redeem</md-icon> Checkout</button>&nbsp;
+        <button md-raised-button [routerLink]="['/']">Continue Shopping</button>
+      </md-grid-tile>
+    </md-grid-list>
+</div>
+
+
+<ng-template #elseBlock>
+  <div class="wrapper">
+      <h1>Nothing here :D, You need to shop first</h1>
+  </div>
+</ng-template>

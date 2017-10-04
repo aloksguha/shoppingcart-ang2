@@ -1,0 +1,6 @@
+.md-card:hover { 
+    /* background: linear-gradient(to right, rgba(78, 211, 85, 0.56), #40C5C5); */
+    border : solid #06046D 1px;
+    width: 301px;
+  
+}
