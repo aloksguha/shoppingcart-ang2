@@ -40,10 +40,10 @@ export class Cartservice {
     });
     this.cartTotal -= (_product.price * qty);
     if (qty > 0) {
-      this.addProduct(_product,qty);
-    }else {
-      this.productSubject.next({ products: this.products, cartTotal: this.cartTotal });
+      this.addProduct(_product, qty);
+      this.cartTotal += (_product.price * qty);
     }
+    this.productSubject.next({ products: this.products, cartTotal: this.cartTotal });
   }
 
   deleteProductFromCart(_product: Product, qty: number) {
