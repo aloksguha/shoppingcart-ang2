@@ -6,6 +6,25 @@
     flex: 1 1 auto;
   }
 
+  .plain{
+      color: white;
+      font-family: inherit;
+      text-decoration: none;
+  }
+
+  .fixed{
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      opacity: 0.6; 
+  }
+
+  .fixed:hover{
+    opacity: 0.9; 
+  }
+
+
+
   /* a:link {
     background-color: yellow;
 } */

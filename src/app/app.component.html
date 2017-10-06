@@ -1,10 +1,15 @@
-<md-toolbar color="primary">
-  <a [routerLink]="['/']" style="text-decoration: none;"><span>Smart Shopping</span></a>
-  <span class="example-spacer"></span>
-  <a [routerLink]="['/cart']"><md-icon class="example-icon">shopping_cart</md-icon></a>
-  <a [routerLink]="['/cart']"><app-cartnumber></app-cartnumber></a>
-</md-toolbar>
+<div class="fixed">
+  <md-toolbar color="primary">
+    <a [routerLink]="['/']" class="plain">
+      <span>Smart Shopping</span>
+    </a>
+    <span class="example-spacer"></span>
+    <a [routerLink]="['/cart']" class="plain">
+      <md-icon class="example-icon">shopping_cart</md-icon>
+    </a>
+    <a [routerLink]="['/cart']" class="plain">
+      <app-cartnumber></app-cartnumber>
+    </a>
+  </md-toolbar>
+</div>
 <router-outlet></router-outlet>
-
-
-
